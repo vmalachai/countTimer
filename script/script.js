@@ -18,6 +18,7 @@ timerForm.addEventListener('submit', function (e) {
     
     if (timeLeft <= 0) {
       clearInterval(countdownInterval);
+      document.body.style.backgroundColor = '#ff4500'; // Change background color
       alert('Time is up!');
     }
   }, 1000);
