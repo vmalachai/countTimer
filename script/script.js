@@ -22,3 +22,7 @@ timerForm.addEventListener('submit', function (e) {
     }
   }, 1000);
 });
+document.getElementById('resetButton').addEventListener('click', function () {
+  clearInterval(countdownInterval);
+  countdownDisplay.textContent = 'Time left: 0';
+});
